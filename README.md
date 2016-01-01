@@ -1,10 +1,11 @@
-# logstash_simple-cookbook
+# logstash_simple cookbook
 
-TODO: Enter the cookbook description here.
+Simple LWRP cookbook for deplyoing Logstash via tar.gz or rpm
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+CentOS 7.0+
+Chef 12.6.0+
 
 ## Attributes
 
@@ -39,4 +40,4 @@ Include `logstash_simple` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Thomas Riley
