@@ -33,7 +33,8 @@ Include `logstash_simple` in your node's `run_list`:
   "run_list": [
     "recipe[logstash_simple::default]"
   ]
-}```
+}
+```
 
 ## Resources
 
@@ -54,7 +55,8 @@ Example:
   logstash_group 'logstash'
   logstash_heap_size '300M'
   action :create
-end```
+end
+```
 
 ### logstash_simple_config
 
@@ -89,7 +91,8 @@ Example:
   path logtash_config
   name 'logstash_test.conf'
   action :create
-end```
+end
+```
 
 ## logstash_simple_service
 
@@ -100,7 +103,8 @@ The service can be enabled, disabled, stopped or started.
 Example:
 ```logstash_simple_service 'logstash' do
   action [ :enable, :start ]
-end```
+end
+```
 
 ## License and Authors
 
