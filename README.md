@@ -42,8 +42,7 @@ Include `logstash_simple` in your node's `run_list`:
 This resource downloads and installs Logstash
 
 Example:
-```
-logstash_simple_instance 'logstash' do
+```logstash_simple_instance 'logstash' do
   package_type 'tarball'
   package_url 'https://download.elastic.co/logstash/logstash/logstash-2.1.1.tar.gz'
   package_checksum '2ea975e16a02b416a5bd9eed5ab280224820f278d54f6e0ec4cccf0d8f5ca610'
@@ -55,8 +54,7 @@ logstash_simple_instance 'logstash' do
   logstash_group 'logstash'
   logstash_heap_size '300M'
   action :create
-end
-```
+end```
 
 ### logstash_simple_config
 
@@ -65,8 +63,7 @@ This resource uses the given Input, Filter and Output configuration and generate
 Use multiple logstash_simple_config resources to create multiple config files.
 
 Example:
-```
-logstash_simple_config 'logstash' do
+```logstash_simple_config 'logstash' do
   input <<-EOF
   input {
     tcp {
@@ -92,8 +89,7 @@ logstash_simple_config 'logstash' do
   path logtash_config
   name 'logstash_test.conf'
   action :create
-end
-```
+end```
 
 ## logstash_simple_service
 
@@ -102,11 +98,9 @@ This resource manages the Logstash service via Systemd.
 The service can be enabled, disabled, stopped or started.
 
 Example:
-```
-logstash_simple_service 'logstash' do
+```logstash_simple_service 'logstash' do
   action [ :enable, :start ]
-end
-```
+end```
 
 ## License and Authors
 
