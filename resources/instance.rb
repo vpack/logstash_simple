@@ -43,12 +43,12 @@ action :create do
   	end
 
   	template '/etc/default/logstash' do
-  	  source 'logstash.environment.erb'
-  	  owner 'root'
-  	  group 'root'
-  	  mode '0644'
+      source 'logstash.environment.erb'
+      owner 'root'
+      group 'root'
+      mode '0644'
   	  variables ({
-  	  	  :l_directory => logstash_directory,
+          :l_directory => logstash_directory,
           :l_version => logstash_version,
           :l_log_directory => logstash_log_directory,
           :l_config_directory => logstash_config_directory,
@@ -65,7 +65,7 @@ action :create do
   	  group 'root'
   	  mode '0755'
   	  variables ({
-  	  	  :l_directory => logstash_directory
+                  :l_directory => logstash_directory
   	  	})
   	end
   	

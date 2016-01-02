@@ -4,9 +4,9 @@ Very basic LWRP cookbook for installing Logstash via tar.gz (or rpm) on CentOS s
 
 ## Pre-requisites
 
-[Java Runtime](https://www.java.com/en/) Logtash requires Java 1.7+ however the LWPRs in this cookbook do not facilitate this. 
+[Java Runtime](https://www.java.com/en/) Logtash requires Java 1.7+ however the resources in this cookbook do not facilitate this. 
 
-Chef 12.6+ - This cookbook requires Chef 12.6.0+
+This cookbook requires Chef 12.6.0+
 
 ## Supported Platforms
 
@@ -16,7 +16,7 @@ This has been tested on CentOS 7.1
 
 This cookbook provides a default recipe to give an example of how to make use of the included Chef resources.
 
-### default
+### logtash_simple::default
 
 Installs Logstash 2.1.1 from tar.gz to /usr/local/logstash.
 
@@ -30,7 +30,6 @@ Include `logstash_simple` in your node's `run_list`:
 
 ```
 
-json
 {
   "run_list": [
     "recipe[logstash_simple::default]"
@@ -66,7 +65,7 @@ end
 
 ### logstash_simple_config
 
-This resource uses the given Input, Filter and Output configuration and generates a logstash config file.
+This resource uses the given input, filter and output configuration and generates a logstash config file.
 
 Use multiple logstash_simple_config resources to create multiple config files.
 
