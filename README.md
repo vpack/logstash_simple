@@ -65,7 +65,8 @@ This resource uses the given Input, Filter and Output configuration and generate
 Use multiple logstash_simple_config resources to create multiple config files.
 
 Example:
-```logstash_simple_config 'logstash' do
+```
+logstash_simple_config 'logstash' do
   input <<-EOF
   input {
     tcp {
