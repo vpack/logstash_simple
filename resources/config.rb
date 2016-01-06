@@ -11,6 +11,7 @@ action :create do
   template filename do
     source 'config_template.erb'
     mode '0644'
+    cookbook 'logstash_simple'
     variables ({
       :input => input,
       :filter => filter,

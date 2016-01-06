@@ -25,6 +25,7 @@ action :create do
       owner 'root'
       group 'root'
       mode '0755'
+      cookbook 'logstash_simple'
       variables ({
           :l_directory => logstash_directory,
           :l_version => logstash_version,
