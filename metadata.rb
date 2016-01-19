@@ -11,5 +11,5 @@ source_url       'https://github.com/thomasriley/logstash_simple' if respond_to?
 
 supports 'centos'
 
-#depends 'java'
+depends 'java'
 
